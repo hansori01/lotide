@@ -1,9 +1,6 @@
 // returns head element
 const head = arr => {
-  let elem = arr[0];
-  if (typeof elem === 'number') {
-    return parseInt(elem);
-  } else return elem.toString();
+  return arr[0];
 };
 //checks assertEqual from actual to expected
 const assertEqual = function(actual, expected) {
