@@ -1,3 +1,4 @@
+// function checks if the two arguments are equal to each other
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
     console.log(`👌🏻 Assertion Passed 👌🏻 : ${actual} === ${expected}`);
@@ -6,10 +7,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-
-// take in a str (sentence) and return a count of each of the letters within it.
-
-
+// function takes in a str and returns an object with letters as key and it's count in the str as values.
 const countLetters = str => {
   const results = {};
   // loop through each char of string
@@ -29,5 +27,15 @@ const countLetters = str => {
   return results;
 };
 
+//check with assertEqual - exact letter... checking l with 2
+assertEqual(countLetters('hello').l, 2)
+assertEqual(countLetters('hello my name is sori').m, 2);
 
-console.log(countLetters('hello my name is sori'));
+
+// NZ's way of checking above
+const testStr = "hello this is sori"
+const strResult = countLetters(testStr);
+
+assertEqual(strResult['l'], 2)
+assertEqual(strResult['i'], 3)
+assertEqual(strResult['h'], 2)
