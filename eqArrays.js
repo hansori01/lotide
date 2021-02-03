@@ -6,22 +6,21 @@ const assertEqual = (actual, expected) => {
     console.log(`💀 Assertion Failed 💀: ${actual} !== ${expected}`);
   }
 };
-
-//test cases commented out
+// test cases commented out
 // assertEqual('Lighthouse Labs', 'Bootcamp');
 // assertEqual(1, 1);
 // assertEqual(1 + 1, 2);
 // assertEqual(1, Math.random() * 2);
 
-// eqArrays() takes 2 arrays and checks for exact match.
 const eqArrays = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) { // return false first (or at first true will stop function)
       return false;
     }
-    return true;
   }
+  return true;
 };
-//we run eqArrays within assertEqual. Result of eqArrays must === the second argument
-//in this case (true)
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
