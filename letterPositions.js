@@ -1,6 +1,6 @@
 
 const assertEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) { 
+  if (eqArrays(actual, expected)) {
     console.log(`👌🏻 Assertion Passed 👌🏻 : ${actual} === ${expected}`);
   } else {
     console.log(`💀 Assertion Failed 💀: ${actual} !== ${expected}`);
@@ -20,7 +20,7 @@ const eqArrays = (arr1, arr2) => {
 };
 
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   // loop through each index using [i]
   for (let i = 0; i < sentence.length; i++) {
@@ -40,7 +40,7 @@ const letterPositions = function (sentence) {
   }
   return results;
 };
-// console.log(letterPositions('hello'))
+console.log(letterPositions('hello'));
 // test letterPositions function
 // console.log(letterPositions('hello my name sori'))
 
@@ -50,4 +50,4 @@ const letterPositions = function (sentence) {
 //     eqArrays(letterPositions('hello').l, [2,3]))
 
 // check using assertEqual
-assertEqual(letterPositions('hello').h, [0])
+assertEqual(letterPositions('hello').h, [0]);

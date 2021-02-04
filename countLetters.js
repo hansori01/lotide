@@ -28,14 +28,14 @@ const countLetters = str => {
 };
 
 //check with assertEqual - exact letter... checking l with 2
-assertEqual(countLetters('hello').l, 2)
+assertEqual(countLetters('hello').l, 2);
 assertEqual(countLetters('hello my name is sori').m, 2);
 
 
 // NZ's way of checking above
-const testStr = "hello this is sori"
+const testStr = "hello this is sori";
 const strResult = countLetters(testStr);
 
-assertEqual(strResult['l'], 2)
-assertEqual(strResult['i'], 3)
-assertEqual(strResult['h'], 2)
+assertEqual(strResult['l'], 2);
+assertEqual(strResult['i'], 3);
+assertEqual(strResult['h'], 2);
