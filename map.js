@@ -25,7 +25,7 @@ const eqArrays = (arr1, arr2) => {
 
 const words = ['i', 'am', 'sori', 'han', 'who', 'is', 'javascripting'];
 
-const map = function (array, cb) {
+const map = function(array, cb) {
   const letters = [];
   for (let item of array) {
     letters.push(cb(item));
