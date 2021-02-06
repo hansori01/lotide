@@ -1,3 +1,6 @@
+//This was work through with Sam
+// He taught me about debugging by console logging often!
+
 
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
