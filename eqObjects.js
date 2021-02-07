@@ -21,6 +21,9 @@ const eqArrays = (arr1, arr2) => {
 // eqObjects returns true if both obj has identical keys with identical values
 // if key values = array, call eqArrays, if key values = objects, recurse and call eqObjects
 const eqObjects = (object1, object2) => {
+  if(Object.keys(object1).length !== Object.keys(object2).length) {
+    return false;
+  }
   // check if the value is an array
   for (let key in object1) {
     // console.log('this is key ' + key + ' ' + object1[key] + ' ' + object2[key])
@@ -48,7 +51,9 @@ const eqObjects = (object1, object2) => {
   return true;
 };
 
-const objA = { b: [1], a: { y: 1, z: 1 }, d: 1 };
+
+
+const objA = { b: [1], a: { y: 1, z: 1 }, d: 1};
 const objB = { b: [1], a: { y: 1, z: 1 }, d: 1 };
 console.log(eqObjects(objA, objB));
 
@@ -56,6 +61,33 @@ console.log(eqObjects(objA, objB));
 
 
 
+
+
+//helping eric murray with his solution 
+// const eqObjects = function(object1, object2) {
+//   if (Object.keys(object1).length !== Object.keys(object2).length) {
+//     return false;
+//   }
+//   for (const key in object1) {
+//     if (Array.isArray(object1[key])) {
+//       console.log(object1[key], object2[key])
+//        if(!eqArrays(object1[key], object2[key])) {
+//          return false;
+//        };
+//     }
+//      else if (typeof object1[key] === 'object') {
+//       if (!eqObjects(object1[key], object2[key])){
+//         console.log(object1[key], object2[key])
+//         return false
+//       }
+//     }
+//     else if (object1[key] !== object2[key]) {
+      
+//       return false;
+//     }
+//   }
+//   return true;
+// };
 
 /* old eqObjects without checking for nested objects
 
