@@ -1,6 +1,6 @@
 // returns tail element
 const tail = arr => {
-  let newArr = arr.slice(1);
+  let newArr = arr.slice(arr.length - 1);
   return newArr;
 };
 
