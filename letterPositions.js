@@ -40,7 +40,7 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log(letterPositions('hello'));
+// console.log(letterPositions('hello'));
 // test letterPositions function
 // console.log(letterPositions('hello my name sori'))
 
@@ -50,4 +50,7 @@ console.log(letterPositions('hello'));
 //     eqArrays(letterPositions('hello').l, [2,3]))
 
 // check using assertEqual
-assertEqual(letterPositions('hello').h, [0]);
+// assertEqual(letterPositions('hello').h, [0]);
+
+
+module.exports = letterPositions;

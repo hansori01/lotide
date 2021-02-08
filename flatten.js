@@ -36,4 +36,6 @@ const flatten = arr => {
 };
 
 // console.log(eqArrays(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ]));
-assertArraysEquals(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ]);
+// assertArraysEquals(flatten([1, 2, [3, 4], 5, [6]]), [ 1, 2, 3, 4, 5, 6 ]);
+
+module.exports = flatten;

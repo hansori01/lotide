@@ -34,8 +34,9 @@ const without = (arr1, arr2) => {
 };
 
 
-const words = ["hello", "world", "lighthouse"];
-const newWords = without(words, ["lighthouse"]);
-console.log(newWords);
-assertArraysEquals(words, ["hello", "world", "lighthouse"]);
+// const words = ["hello", "world", "lighthouse"];
+// const newWords = without(words, ["lighthouse"]);
+// console.log(newWords);
+// assertArraysEquals(words, ["hello", "world", "lighthouse"]);
 
+module.exports = without;

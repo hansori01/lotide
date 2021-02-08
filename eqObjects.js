@@ -6,17 +6,7 @@ const assertEqual = (actual, expected) => {
   }
 };
 
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) { // return false first (or at first true will stop function)
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays')
 
 // eqObjects returns true if both obj has identical keys with identical values
 // if key values = array, call eqArrays, if key values = objects, recurse and call eqObjects
@@ -53,6 +43,7 @@ const eqObjects = (object1, object2) => {
 
 
 
-const objA = { b: [1], a: { y: 1, z: 1 }, d: 1 };
-const objB = { b: [1], a: { y: 1, z: 1 }, d: 1 };
-console.log(eqObjects(objA, objB));
+// const objA = { b: [1], a: { y: 1, z: 1 }, d: 1 };
+// const objB = { b: [1], a: { y: 1, z: 1 }, d: 1 };
+// console.log(eqObjects(objA, objB));
+module.exports = eqObjects;

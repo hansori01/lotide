@@ -23,7 +23,7 @@ const eqArrays = (arr1, arr2) => {
   return true;
 };
 
-const words = ['i', 'am', 'sori', 'han', 'who', 'is', 'javascripting'];
+// const words = ['i', 'am', 'sori', 'han', 'who', 'is', 'javascripting'];
 
 const map = function(array, cb) {
   const letters = [];
@@ -33,14 +33,15 @@ const map = function(array, cb) {
   return letters;
 };
 
-const results = map(words, word => word[0]);
-
+// const results = map(words, word => word[0]);
 
 //test code
-assertArraysEquals(map([0, 1, 2, 3, 4], x => x + 10), [10, 11, 12, 13, 14]);
-assertArraysEquals(map([3, 4, 2, 5, 1], x => x).sort(), [1, 2, 3, 4, 5]);
-assertArraysEquals(results, [
-  'i', 'a', 's',
-  'h', 'w', 'i',
-  'j'
-]);
+// assertArraysEquals(map([0, 1, 2, 3, 4], x => x + 10), [10, 11, 12, 13, 14]);
+// assertArraysEquals(map([3, 4, 2, 5, 1], x => x).sort(), [1, 2, 3, 4, 5]);
+// assertArraysEquals(results, [
+//   'i', 'a', 's',
+//   'h', 'w', 'i',
+//   'j'
+// ]);
+
+module.exports = map;

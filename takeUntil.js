@@ -33,18 +33,19 @@ const takeUntil = (array, callback) => {
   return output;
 };
 
-const data0 = ['hello', 'this', 'is', 'fun'];
-const test = takeUntil(data0, x => x.length <= 2);
-assertArraysEquals(test, ['hello', 'this']);
+// const data0 = ['hello', 'this', 'is', 'fun'];
+// const test = takeUntil(data0, x => x.length <= 2);
+// assertArraysEquals(test, ['hello', 'this']);
 
-console.log('---');
+// console.log('---');
 
-const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const results1 = takeUntil(data1, x => x < 0);
-assertArraysEquals(results1, [1, 2, 5, 7, 2]);
+// const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+// const results1 = takeUntil(data1, x => x < 0);
+// assertArraysEquals(results1, [1, 2, 5, 7, 2]);
 
-console.log('---');
+// console.log('---');
 
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
-const results2 = takeUntil(data2, x => x === ',');
-assertArraysEquals(results2, ["I've", 'been', 'to', 'Hollywood']);
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+// const results2 = takeUntil(data2, x => x === ',');
+// assertArraysEquals(results2, ["I've", 'been', 'to', 'Hollywood']);
+module.exports = takeUntil;
