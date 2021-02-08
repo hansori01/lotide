@@ -1,23 +1,3 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) { // return false first (or at first true will stop function)
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEquals = (actual, expected) => {
-  if (eqArrays(actual, expected)) { // we call eqArrays function with arrays passed down when calling parent function
-    console.log(`👌🏻 Assertion Passed 👌🏻 : ${actual} === ${expected}`);
-  } else {
-    console.log(`💀 Assertion Failed 💀: ${actual} !== ${expected}`);
-  }
-};
-
 
 // make a middle function that returns a new array with only middle Element(s)
 const middle = function(array) {
@@ -39,16 +19,5 @@ const middle = function(array) {
   }
   return output;
 };
-//test assertions
 
-// middle([1, 2, 3, 4]) // => [2, 3]
-// middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-// console.log(middle([1])) // => []
-// middle([1, 2]) // => []
-// middle([1, 2, 3]) // => [2]
-// middle([1, 2, 3, 4, 5]) // => [3]
-
-assertArraysEquals(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEquals(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
-assertArraysEquals(middle([1]), []);
-assertArraysEquals(middle([1, 2, 3, 4, 5]), [3]);
+module.exports = middle;
