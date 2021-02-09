@@ -12,11 +12,3 @@ describe('#tail', () => {
     assert.deepEqual(tail(test), [2, 3]);
   });
 });
-
-
-
-
-// const words = ["Hello", "Lighthouse", "Labs"];
-
-// assertEqual(tail(words)[0], 'Lighthouse');
-// assertEqual(tail(words)[1], 'Labs');

@@ -8,5 +8,4 @@ describe('#eqObjects', () => {
     const expectedOutput = { h: [0], e: [1], l: [2, 3], o: [4] };
     assert.deepEqual(letterPositions(str), expectedOutput);
   });
-
-})
+});

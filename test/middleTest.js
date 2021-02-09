@@ -25,5 +25,3 @@ describe('#middle', () => {
     assert.deepEqual(middle(input), expectedOutput);
   });
 });
-// assertArraysEquals(middle([1]), []);
-// assertArraysEquals(middle([1, 2, 3, 4, 5]), [3]);
