@@ -2,7 +2,7 @@
 const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 
-const head= require('./head');
+const head = require('./head');
 const tail = require('./tail');
 const middle = require('./middle');
 const findKey = require('./findKey');
@@ -18,18 +18,18 @@ const takeUntil = require('./takeUntil');
 
 
 module.exports = {
-eqArrays,
-eqObjects,
-head,
-tail,
-middle,
-findKey,
-findKeyByValues,
-flatten,
-letterPositions,
-map,
-takeUntil,
-without,
-countLetters,
-countOnly
+  eqArrays,
+  eqObjects,
+  head,
+  tail,
+  middle,
+  findKey,
+  findKeyByValues,
+  flatten,
+  letterPositions,
+  map,
+  takeUntil,
+  without,
+  countLetters,
+  countOnly
 };
