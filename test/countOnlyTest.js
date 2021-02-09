@@ -15,7 +15,7 @@ describe("#countOnly", () => {
       "Fang",
       "Joe"
     ];
-    const conditionalValues = { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false }
+    const conditionalValues = { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false };
     const expectedOutcome = { Fang: 2, Jason: 1 };
     assert.deepEqual(countOnly(firstNames, conditionalValues), expectedOutcome);
   });

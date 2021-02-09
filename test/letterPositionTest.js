@@ -1,7 +1,7 @@
 const letterPositions = require('../letterPositions');
 const assert = require('chai').assert;
 
-describe('#eqObjects', () => {
+describe('#letterPositions', () => {
 
   it('returns [0] for ("hello").h', () => {
     const str = 'hello';

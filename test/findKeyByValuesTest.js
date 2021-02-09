@@ -1,11 +1,11 @@
 const findKeyByValues = require('../findKeyByValues');
 const assert = require('chai').assert;
 
-describe('#eqObjects', () => {
+describe('#findKeyByValues', () => {
 
   it('obj with "The Wire" returns "drama"', () => {
     const obj = {
-      sci_fi: "The Expanse",
+      scifi: "The Expanse",
       comedy: "Brooklyn Nine-Nine",
       drama: "The Wire"
     };
@@ -16,7 +16,7 @@ describe('#eqObjects', () => {
 
   it('obj with "Superstore" returns "undefined"', () => {
     const obj = {
-      sci_fi: "The Expanse",
+      scifi: "The Expanse",
       comedy: "Brooklyn Nine-Nine",
       drama: "The Wire"
     };

@@ -15,4 +15,4 @@ describe('#eqObjects', () => {
     assert.deepEqual(eqObjects(object1, object2), true);
   });
 
-})
+});

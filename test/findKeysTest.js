@@ -1,7 +1,7 @@
 const findKey = require('../findKey');
 const assert = require('chai').assert;
 
-describe('#eqObjects', () => {
+describe('#findKey', () => {
 
   it('obj with callback returns "noma"', () => {
     const obj = {
@@ -11,10 +11,10 @@ describe('#eqObjects', () => {
       "elBulli": { stars: 3 },
       "Ora": { stars: 2 },
       "Akelarre": { stars: 3 }
-    }
+    };
     const callback = x => x.stars === 2;
     const expectedOutput = 'noma';
     assert.deepEqual(findKey(obj, callback), expectedOutput);
   });
 
-})
+});

@@ -13,4 +13,4 @@ describe('#eqArrays', () => {
     const expectedOutput = [1, 2];
     assert.deepEqual(eqArrays(input, expectedOutput), false);
   });
-})
+});
