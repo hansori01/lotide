@@ -1,6 +1,16 @@
-const assertEqual = require('../assertEqual');
 const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 
-assertEqual(eqArrays(['1',['2',['2'],[2,[2,3]]],'3'], ['1',['2',['2'],[2,[2,3]]],'3']), true); // => should PASS
-assertEqual(eqArrays([1, 2, [3]], [1, 2]), false); // => should PASS
-assertEqual(eqArrays([], [1, 2, 3]), false); // => should PASS
+describe('#eqArrays', () => {
+
+  it('returns true for nested arrays', () => {
+    const arr1 = [1];
+    const arr2 = [1];
+    assert.deepEqual(eqArrays(arr1, arr2), true);
+  });
+  it('returns false for unmatching arrays', () => {
+    const input = [1, 2, [3]];
+    const expectedOutput = [1, 2];
+    assert.deepEqual(eqArrays(input, expectedOutput), false);
+  });
+})
