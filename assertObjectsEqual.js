@@ -18,29 +18,3 @@ const eqArrays = (arr1, arr2) => {
   }
   return true;
 };
-
-const eqObjects = (object1, object2) => {
-  let sortedKey1 = Object.keys(object1);
-  let sortedKey2 = Object.keys(object2);
-  if (sortedKey1.length !== sortedKey2.length) {
-    return false;
-  } else {
-    for (let key of sortedKey1) {
-      if (Array.isArray(object1[key])) {
-        if (!eqArrays(object1[key], object2[key])) {
-          return false;
-        } else if (object1[key] !== object2[key] && !Array.isArray(object1[key])) {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-};
-
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// assertObjectsEqual(cd, dc);
-
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// assertObjectsEqual(cd, cd2);

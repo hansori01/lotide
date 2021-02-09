@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@hansori/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A mini clone of the Lodash library created as a project for LightHouse Labs' Web Dev Bootcamp 2021",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
