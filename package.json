@@ -1,6 +1,6 @@
 {
   "name": "@hansori/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mini clone of the Lodash library created as a project for LightHouse Labs' Web Dev Bootcamp 2021",
   "main": "index.js",
   "directories": {
